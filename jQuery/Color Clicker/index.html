@@ -21,8 +21,7 @@
         $(document).ready(function(){
            $("#large_box").on("click", function(){
              $("#large_box").css("background-color", random_color());
-             $(".middle_box").css("background-color", random_color());
-             $(".side_box").css("background-color", random_color());
+             $(this).children().css("background-color", random_color());
            });
 
            $('.side_box').click(function(event){

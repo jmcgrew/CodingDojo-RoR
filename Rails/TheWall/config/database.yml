@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: ubuntu
+  pool: 5
+
+    #timeout: 5000
+
+development:
+  <<: *default
+  database: DeployDemo_development
+
+test:
+  <<: *default
+  database: DeployDemo_test
+
+production:
+  <<: *default
+  database: DeployDemo_production
+  password: <%= ENV['DEPLOYDEMO_DATABASE_PASSWORD'] %>

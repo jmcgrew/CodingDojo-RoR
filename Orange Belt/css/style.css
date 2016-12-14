@@ -1,0 +1,150 @@
+/* Clear */
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Wrapper */
+
+#wrapper{
+	width: 970px;
+	margin: 0 auto;
+}
+
+/* Header */
+
+header{
+	width: 970px;
+	height: 250px;
+	display: block;
+	overflow: hidden;
+}
+
+/* Navigation */
+
+#nav{
+	background-color: #000;
+	text-align: center;
+	margin-top: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+	.stack{
+		height: 95px;
+		width: 95px;
+		background-color: #fff;
+		border-radius: 25px;
+		display: inline-block;
+		margin: 8px 15px;
+		vertical-align: top;
+    overflow: hidden;
+	}
+
+		.stack p{
+			position: relative;
+		  top: 50%;
+		  transform: translateY(-50%);
+		}
+
+/* Add box subheader */
+
+#addBox{
+	background-color: grey;
+	padding: 35px 0 15px 0;
+}
+
+	#addBox h2{
+		margin: 0 0 15px 15px;
+		font-size: 20px;
+	}
+
+	#addBox input[type="text"] {
+	    margin-left: 15px;
+	    height: 21px;
+	    width: 175px;
+	}
+
+	#addBox input[type="submit"]{
+	    background-color: #d3d3d3;
+			height: 25px;
+			width: 65px;
+	}
+
+/* Main content */
+
+#mainLeft{
+    display: inline-block;
+		height: 400px;
+    width: 483px;
+    background-color: #e6e6e6;
+    vertical-align: top;
+}
+
+		#mainLeft p{
+	    width: 355px;
+	    background-color: #c8c8f0;
+	    margin: 30px auto;
+	    padding: 7px;
+	    height: 140px;
+		}
+
+		.border{
+			border: 2px solid blue;
+		}
+
+#mainRight{
+    width: 483px;
+    display: inline-block;
+    background-color: #f0f0f0;
+    height: 400px;
+}
+
+		#mainRight p{
+			margin: 0;
+	    padding: 10px;
+		}
+
+/* Bottom comment section */
+
+#comments{
+    display: block;
+    border: 1px solid black;
+    padding: 35px 20px;
+		margin-bottom: 40px;
+    height: 300px;
+}
+
+		#comments h2{
+	    	font-size: 24px;
+	    	margin: 0 0 15px 0;
+		}
+
+		#comments input[type="text"]{
+		    width: 750px;
+		    height: 20px;
+		}
+
+		#comments input[type="submit"]{
+		    width: 170px;
+		    background-color: #d3d3d3;
+		    height: 25px;
+		}
+
+		#commentListing{
+		    overflow: overlay;
+				margin-top: 20px;
+				line-height: 2em;
+		    height: 240px;
+		}
+
+/* Extra details I noticed in the video */
+
+.greyText{
+	color: #999;
+}
+
+.sans{
+	font-family: sans-serif;
+}

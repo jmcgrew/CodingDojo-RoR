@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Orange Belt Exam</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/orangeBelt.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<img src="images/header.png" alt="Header" />
+		</header>
+		<div id="nav">
+			<img class="stack" id="lamp" type="1" src="images/lamp.png" alt="Lamp">
+			<img class="stack" id="mean" type="1" src="images/mean.png" alt="Mean">
+			<img class="stack" id="python" type="1" src="images/python-django.png" alt="Python">
+			<img class="stack" id="ror" type="1" src="images/ror.png" alt="Ruby on Rails">
+			<img class="stack" id="swift" type="2" src="images/ios-swift.png" alt="Swift">
+		</div>
+		<div id="addBox">
+			<h2>Add your own tiles with just text:</h2>
+			<form>
+				<input type="text" id="boxName">
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+		<div id="text">
+			<div id="mainLeft">
+				<p id="scripting">
+					A <mark>scripting or script language</mark> is a programming language that supports scripts, programs written for a special run-time environment that automate the execution of tasks that could alternatively be executed one-by-one by a human operator. Scripting languages are often interpreted (rather than compiled).
+				</p>
+				<p id="compiled">
+					A <mark>compiled language</mark> is a programming language whose implementations are typically compilers (translators that generate machine code from source code), and not interpreters (step-by-step executors of source code, where no pre-runtime translation takes place). The term is somewhat vague.
+				</p>
+			</div>
+			<div id="mainRight">
+			</div>
+		</div>
+		<div id="comments">
+			<h2>Insert a comment:</h2>
+			<form>
+			<input type="text" id="commentContent" name="comment">
+			<input type="submit" value="Comment">
+			<div id="commentListing"></div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

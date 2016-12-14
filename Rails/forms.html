@@ -1,0 +1,25 @@
+<form action="/survey" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <p>Your Name: <input type="test" name="ninja_name" /></p>
+  <p>Dojo Location:
+    <select name="location">
+      <option>Seattle</option>
+      <option>San Jose</option>
+      <option>Chicago</option>
+    </select>
+  </p>
+  <p>Favorite Language:
+    <select name="language">
+      <option>JavaScript</option>
+      <option>Ruby</option>
+      <option>C#</option>
+      <option>Python</option>
+    </select>
+  </p>
+  <p>Comments:
+    <textarea name="comment"></textarea>
+  </p>
+  <p>
+    <input type="submit" value="Submit" />
+  </p>
+</form>
