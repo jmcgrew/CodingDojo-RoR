@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: ubuntu
+  pool: 5
+
+development:
+  <<: *default
+  database: seeks_development
+
+test:
+  <<: *default
+  database: seeks_test
+
+production:
+  <<: *default
+  database: DeployDemo_production
+  password: <%= ENV['SEEKS_DATABASE_PASSWORD'] %>
