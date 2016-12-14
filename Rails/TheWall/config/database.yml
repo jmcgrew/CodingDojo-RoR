@@ -4,17 +4,15 @@ default: &default
   username: ubuntu
   pool: 5
 
-    #timeout: 5000
-
 development:
   <<: *default
-  database: DeployDemo_development
+  database: seeks_development
 
 test:
   <<: *default
-  database: DeployDemo_test
+  database: seeks_test
 
 production:
   <<: *default
   database: DeployDemo_production
-  password: <%= ENV['DEPLOYDEMO_DATABASE_PASSWORD'] %>
+  password: <%= ENV['SEEKS_DATABASE_PASSWORD'] %>
